@@ -182,7 +182,7 @@
     "descLogin": "Sign in to access the demo",
     "descReg": "Register to try the free demo",
     "emailLabel": "Email",
-    "emailPlaceholder": "you@example.com",
+    "emailPlaceholder": "you{'@'}example.com",
     "passLabel": "Password",
     "passPlaceholder": "Min. 6 characters",
     "processing": "Processing...",

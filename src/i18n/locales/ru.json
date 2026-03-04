@@ -182,7 +182,7 @@
     "descLogin": "Войдите, чтобы получить доступ к демо",
     "descReg": "Зарегистрируйтесь, чтобы попробовать бесплатное демо",
     "emailLabel": "Email",
-    "emailPlaceholder": "вы@example.com",
+    "emailPlaceholder": "вы{'@'}example.com",
     "passLabel": "Пароль",
     "passPlaceholder": "Мин. 6 символов",
     "processing": "Обработка...",

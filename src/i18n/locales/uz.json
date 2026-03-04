@@ -182,7 +182,7 @@
     "descLogin": "Demoga kirish uchun kiring",
     "descReg": "Bepul demoni sinab ko'rish uchun ro'yxatdan o'ting",
     "emailLabel": "Email",
-    "emailPlaceholder": "siz@example.com",
+    "emailPlaceholder": "siz{'@'}example.com",
     "passLabel": "Parol",
     "passPlaceholder": "Kaminida 6 ta belgi",
     "processing": "Jarayonda...",
