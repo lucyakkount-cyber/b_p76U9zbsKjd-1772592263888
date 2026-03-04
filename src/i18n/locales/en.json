@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "whyUs": "Why Us",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "Demo",
+    "signIn": "Sign In",
+    "tryDemo": "Try Free Demo",
+    "launchDemo": "Launch Demo",
+    "logout": "Logout"
+  },
+  "hero": {
+    "newBadge": "NEW - Never Seen Before",
+    "subtitle": "Next-Gen 3D AI Avatar System",
+    "title1": "Not Just Another",
+    "title2": "Chatbot.",
+    "title3": "A Living ",
+    "title4": "Companion.",
+    "desc1": "Forget boring text boxes. Talk face-to-face with a 3D VRoid avatar that",
+    "desc1_2": "sees you, hears you, understands you",
+    "desc1_3": "— and responds with real emotions, real voice, and real-time intelligence.",
+    "desc2": "This is what AI interaction was always meant to be.",
+    "btnWhy": "Why This Changes Everything",
+    "authHint": "Sign in required to access the free demo",
+    "live3d": "LIVE 3D",
+    "aiActive": "AI Active",
+    "scroll": "Scroll"
+  },
+  "why": {
+    "badge": "The Future is Here",
+    "title1": "Why Talk to a ",
+    "titleBox": "Text Box",
+    "title3": " When You Can Talk to a",
+    "titleAvatar": " Living Avatar",
+    "desc": "ChatGPT, Claude, Gemini — they are all just text in a box. No face, no voice, no emotion. Quantum VRM changes everything.",
+    "oldWayLabel": "THE OLD WAY",
+    "oldWayTitle": "Traditional Text-Based AI",
+    "newWayLabel": "THE QUANTUM WAY",
+    "newWayTitle": "3D VRoid Real-Time AI"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "feature": {
+    "badge": "Core Features",
+    "title1": "Powered by ",
+    "titleAI": "Cutting-Edge AI",
+    "desc": "Every feature is engineered for an immersive, emotionally intelligent experience that blurs the line between digital and real."
+  },
+  "demo": {
+    "badge": "TRY IT NOW",
+    "title1": "Ready to Meet Your ",
+    "titleAI": "AI Companion",
+    "titleEnd": "?",
+    "desc": "Talk face-to-face, explore real emotions, and see why 3D AI avatars make text-based chatbots feel prehistoric. No credit card required.",
+    "authHint": "Sign in required to access the free demo",
+    "loggedIn": "You are signed in. Launch the demo below!",
+    "btnSign": "Sign In to Launch Demo",
+    "btnLaunch": "Launch Free Demo",
+    "btnLive": "Visit Live App"
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title1": "Choose Your ",
+    "titleLevel": "Access Level",
+    "desc": "Start free and upgrade when you need more. No hidden fees, cancel anytime.",
+    "freeTrial": "7-day free trial included",
+    "btnFree": "Start Free Trial",
+    "btnPro": "Upgrade to Pro",
+    "btnPlus": "Go Plus",
+    "month": "/month",
+    "forever": "/forever"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "whyUs": "Nega biz",
+    "features": "Imkoniyatlar",
+    "pricing": "Narxlar",
+    "demo": "Demo",
+    "signIn": "Kirish",
+    "tryDemo": "Bepul demo versiya",
+    "launchDemo": "Demoni ishga tushirish",
+    "logout": "Chiqish"
+  },
+  "hero": {
+    "newBadge": "YANGI - Hech qachon ko'rilmagan",
+    "subtitle": "Keyingi avlod 3D AI Avatar tizimi",
+    "title1": "Shunchaki oddiy emas",
+    "title2": "Chatbot.",
+    "title3": "Tirik ",
+    "title4": "Hamroh.",
+    "desc1": "-",
+    "desc1_2": "-",
+    "desc1_3": "-",
+    "desc2": "-",
+    "btnWhy": "Nega bu hamma narsani o'zgartiradi",
+    "authHint": "-",
+    "live3d": "-",
+    "aiActive": "-",
+    "scroll": "-"
+  },
+  "why": {
+    "badge": "Kelajak shu erda",
+    "title1": "Nega gaplashish kerak ",
+    "titleBox": "Matn qutisi ",
+    "title3": " bilan, agar siz gaplashishingiz mumkin bo'lsa",
+    "titleAvatar": " Tirik Avatar",
+    "desc": "-",
+    "oldWayLabel": "-",
+    "oldWayTitle": "-",
+    "newWayLabel": "-",
+    "newWayTitle": "-"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "feature": {
+    "badge": "Asosiy imkoniyatlar",
+    "title1": "Tomonidan quvvatlanadi ",
+    "titleAI": "Eng yangi AI",
+    "desc": "Har bir imkoniyat..."
+  },
+  "demo": {
+    "badge": "HOZIROQ SINAB KO'RING",
+    "title1": "Uchrashishga tayyormisiz ",
+    "titleAI": "AI Hamrohingiz bilan",
+    "titleEnd": "?",
+    "desc": "...",
+    "authHint": "...",
+    "loggedIn": "...",
+    "btnSign": "...",
+    "btnLaunch": "...",
+    "btnLive": "..."
+  },
+  "pricing": {
+    "badge": "Narxlar rejalari",
+    "title1": "Tanlang ",
+    "titleLevel": "Kirish darajasi",
+    "desc": "...",
+    "freeTrial": "...",
+    "btnFree": "...",
+    "btnPro": "...",
+    "btnPlus": "...",
+    "month": "/oy",
+    "forever": "/abadiy"
+  }
+}
