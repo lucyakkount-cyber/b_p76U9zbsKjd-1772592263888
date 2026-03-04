@@ -3,9 +3,11 @@ import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 import uz from "./locales/uz.json";
 
+const savedLocale = localStorage.getItem('quantum_vrm_locale') || 'en'
+
 const i18n = createI18n({
   legacy: false, // Use Composition API inside Vue 3
-  locale: "en", // default locale
+  locale: savedLocale, // default locale
   fallbackLocale: "en",
   messages: {
     en,
