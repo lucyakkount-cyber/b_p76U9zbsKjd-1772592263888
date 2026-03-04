@@ -61,7 +61,10 @@
 </template>
 
 <script setup>
-import { h } from 'vue'
+import { h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const BrainIcon = {
   render() {
@@ -117,42 +120,42 @@ const ZapIcon = {
   }
 }
 
-const features = [
+const features = computed(() => [
   {
     icon: BrainIcon,
-    title: 'Neural Persona Engine',
-    description: 'Dynamic personality system with memory core. Your avatar remembers past conversations and adapts responses with emotional intelligence.',
+    title: t('feature.feat1Title'),
+    description: t('feature.feat1Desc'),
   },
   {
     icon: MicIcon,
-    title: 'Real-Time Voice Chat',
-    description: 'Natural voice conversation with instant response. Speak naturally and get emotionally-charged, real replies in real time.',
+    title: t('feature.feat2Title'),
+    description: t('feature.feat2Desc'),
   },
   {
     icon: EyeIcon,
-    title: 'Screen Analysis',
-    description: 'Share your screen and let the AI analyze what you are working on. Get contextual help, suggestions, and real-time feedback.',
+    title: t('feature.feat3Title'),
+    description: t('feature.feat3Desc'),
   },
   {
     icon: SparklesIcon,
-    title: 'Advanced Expressions',
-    description: 'Dynamic expressions with variable duration. From micro-expressions to lingering moods, the avatar feels genuinely alive.',
+    title: t('feature.feat4Title'),
+    description: t('feature.feat4Desc'),
   },
   {
     icon: ShieldIcon,
-    title: 'Safety Pipeline',
-    description: 'Built-in behavioral analysis and safety reporting. Detects threats, captures evidence, and enables fast moderation.',
+    title: t('feature.feat5Title'),
+    description: t('feature.feat5Desc'),
   },
   {
     icon: ZapIcon,
-    title: 'Optimized Performance',
-    description: 'Smart caching via IndexedDB, aggressive garbage collection, and code splitting. Smooth experience even on mid-range hardware.',
+    title: t('feature.feat6Title'),
+    description: t('feature.feat6Desc'),
   },
-]
+])
 
-const featureImages = [
-  { src: '/images/voice-chat.jpg', alt: 'Real-time voice chat interface with AI avatar', label: 'Voice Chat Interface', desc: 'Speak naturally, hear real responses' },
-  { src: '/images/screen-analysis.jpg', alt: 'AI screen analysis and sharing feature', label: 'Screen Analysis', desc: 'Your AI sees what you see' },
-  { src: '/images/emotions.jpg', alt: 'Dynamic avatar expressions and emotions', label: 'Expression Engine', desc: 'Real emotions, real reactions' },
-]
+const featureImages = computed(() => [
+  { src: '/images/voice-chat.jpg', alt: 'Real-time voice chat interface with AI avatar', label: t('feature.img1Label'), desc: t('feature.img1Desc') },
+  { src: '/images/screen-analysis.jpg', alt: 'AI screen analysis and sharing feature', label: t('feature.img2Label'), desc: t('feature.img2Desc') },
+  { src: '/images/emotions.jpg', alt: 'Dynamic avatar expressions and emotions', label: t('feature.img3Label'), desc: t('feature.img3Desc') },
+])
 </script>

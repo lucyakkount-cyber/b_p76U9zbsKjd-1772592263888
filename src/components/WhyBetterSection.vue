@@ -165,7 +165,9 @@
 </template>
 
 <script setup>
-const oldWay = [
+import { computed } from 'vue'
+
+const oldWay = computed(() => [
   'Staring at a white screen with walls of text',
   'No face, no body language, no emotion &mdash; just words',
   'Copy-paste responses that feel robotic and lifeless',
@@ -173,9 +175,9 @@ const oldWay = [
   'Type and wait... type and wait... type and wait',
   'No voice, no real-time interaction, no presence',
   'Feels like talking to a search engine, not a being',
-]
+])
 
-const newWay = [
+const newWay = computed(() => [
   'A real 3D VRoid avatar that looks at you and reacts',
   'Dynamic facial expressions &mdash; smiles, surprise, anger, thinking',
   'Real-time voice conversation &mdash; just talk naturally',
@@ -183,28 +185,32 @@ const newWay = [
   'Instant responses with facial reactions and body language',
   'Screen sharing &mdash; your AI can SEE what you are working on',
   'Feels like talking to a real companion, not a tool',
-]
+])
 
-const advantages = [
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const advantages = computed(() => [
   {
     stat: '10x',
-    title: 'More Engaging',
-    desc: 'Users spend 10x longer in conversation vs. text-only AI chats',
+    title: t('why.adv1Title'),
+    desc: t('why.adv1Desc'),
   },
   {
     stat: '3D',
-    title: 'Real Presence',
-    desc: 'A full VRoid body with animations, not an avatar circle with initials',
+    title: t('why.adv2Title'),
+    desc: t('why.adv2Desc'),
   },
   {
     stat: 'Voice',
-    title: 'Natural Chat',
-    desc: 'Speak and get a voiced reply in real-time, with matching expressions',
+    title: t('why.adv3Title'),
+    desc: t('why.adv3Desc'),
   },
   {
     stat: 'New',
-    title: 'Entire Category',
-    desc: 'This is not an upgrade to chatbots. It is an entirely new way to interact with AI.',
+    title: t('why.adv4Title'),
+    desc: t('why.adv4Desc'),
   },
-]
+])
 </script>

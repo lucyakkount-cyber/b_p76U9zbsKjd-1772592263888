@@ -28,7 +28,7 @@
 
           <div class="mb-8">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-card border border-border text-xs font-mono text-muted-foreground mb-4">
-              FREE TIER
+              {{ $t('pricing.stdTier') }}
             </div>
             <h3 class="text-2xl font-bold text-foreground mb-2">Standard</h3>
             <div class="flex items-baseline gap-1">
@@ -62,20 +62,20 @@
           <!-- Popular badge -->
           <div class="absolute top-6 right-6">
             <div class="px-3 py-1 rounded-full bg-primary/20 border border-primary/40">
-              <span class="text-xs font-semibold text-primary">POPULAR</span>
+              <span class="text-xs font-semibold text-primary">{{ $t('pricing.proPopular') }}</span>
             </div>
           </div>
 
           <div class="mb-8">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-mono text-primary mb-4">
-              PRO ACCESS
+              {{ $t('pricing.proTier') }}
             </div>
             <h3 class="text-2xl font-bold text-foreground mb-2">Pro</h3>
             <div class="flex items-baseline gap-1">
               <span class="text-5xl font-extrabold neon-text">$4.99</span>
               <span class="text-muted-foreground">{{ $t('pricing.month') }}</span>
             </div>
-            <p class="text-muted-foreground text-xs mt-2">Best value for regular users</p>
+            <p class="text-muted-foreground text-xs mt-2">{{ $t('pricing.proSubtitle') }}</p>
           </div>
 
           <ul class="flex-1 space-y-4 mb-8">
@@ -102,20 +102,20 @@
           <!-- Ultimate badge -->
           <div class="absolute top-6 right-6">
             <div class="px-3 py-1 rounded-full bg-yellow-500/20 border border-yellow-500/40">
-              <span class="text-xs font-semibold text-yellow-400">ULTIMATE</span>
+              <span class="text-xs font-semibold text-yellow-400">{{ $t('pricing.plusUltimate') }}</span>
             </div>
           </div>
 
           <div class="mb-8">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-xs font-mono text-yellow-400 mb-4">
-              PLUS ACCESS
+              {{ $t('pricing.plusTier') }}
             </div>
             <h3 class="text-2xl font-bold text-foreground mb-2">Plus</h3>
             <div class="flex items-baseline gap-1">
               <span class="text-5xl font-extrabold text-yellow-400" style="text-shadow: 0 0 10px rgba(250, 204, 21, 0.5), 0 0 20px rgba(250, 204, 21, 0.2);">$9.99</span>
               <span class="text-muted-foreground">{{ $t('pricing.month') }}</span>
             </div>
-            <p class="text-muted-foreground text-xs mt-2">Unlimited everything, no restrictions</p>
+            <p class="text-muted-foreground text-xs mt-2">{{ $t('pricing.plusSubtitle') }}</p>
           </div>
 
           <ul class="flex-1 space-y-4 mb-8">
@@ -136,11 +136,11 @@
       <!-- Comparison note -->
       <div class="text-center mt-16">
         <p class="text-muted-foreground text-sm mb-2">
-          All plans include access to the base VRoid 3D AI avatar.
+          {{ $t('pricing.note1') }}
         </p>
         <p class="text-muted-foreground text-xs">
-          <span class="text-primary">Pro</span> unlocks screen analysis and extended voice chat.
-          <span class="text-yellow-400">Plus</span> unlocks custom personas, memory, own model uploads, and removes all limits.
+          <span class="text-primary">Pro</span>{{ $t('pricing.note2_1') }}
+          <span class="text-yellow-400">Plus</span>{{ $t('pricing.note2_2') }}
         </p>
       </div>
     </div>
@@ -148,6 +148,9 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
 const props = defineProps({
   isLoggedIn: Boolean,
 })
@@ -158,42 +161,44 @@ function handleAction() {
   emit('tryDemo')
 }
 
-const standardFeatures = [
-  { text: '7-day free trial', included: true },
-  { text: '10-minute real-time voice conversation', included: true },
-  { text: 'Basic avatar animations', included: true },
-  { text: 'Standard response speed', included: true },
-  { text: 'Text-based interaction', included: false },
-  { text: 'Memory across sessions', included: false },
-  { text: 'Screen analysis / camera', included: false },
-  { text: 'Custom persona creation', included: false },
-  { text: 'Upload your own VRM model', included: false },
-  { text: 'Community support', included: false },
-]
+const { t } = useI18n()
 
-const proFeatures = [
-  { text: '180-minute daily voice chat limit', included: true },
-  { text: 'Full animation library unlocked', included: true },
-  { text: 'Real-time voice conversations', included: true },
-  { text: 'Screen sharing & AI analysis (limited time)', included: true },
-  { text: 'Camera access for AI vision (limited time)', included: true },
-  { text: 'Priority response speed', included: true },
-  { text: 'Emotional intelligence engine', included: true },
-  { text: 'Custom persona creation', included: false },
-  { text: 'Memory across sessions', included: false },
-  { text: 'Upload your own VRM model', included: false },
-]
+const standardFeatures = computed(() => [
+  { text: t('pricing.stdFeat1'), included: true },
+  { text: t('pricing.stdFeat2'), included: true },
+  { text: t('pricing.stdFeat3'), included: true },
+  { text: t('pricing.stdFeat4'), included: true },
+  { text: t('pricing.stdFeat5'), included: false },
+  { text: t('pricing.stdFeat6'), included: false },
+  { text: t('pricing.stdFeat7'), included: false },
+  { text: t('pricing.stdFeat8'), included: false },
+  { text: t('pricing.stdFeat9'), included: false },
+  { text: t('pricing.stdFeat10'), included: false },
+])
 
-const plusFeatures = [
-  'Unlimited voice chat - no daily limit',
-  'Custom persona creation',
-  'Memory across sessions - AI remembers you',
-  'Upload your own VRM model',
-  'Unlimited screen analysis & camera access',
-  'Full animation & expression library',
-  'Priority response speed',
-  'Emotional intelligence engine',
-  'No feature restrictions whatsoever',
-  'Early access to new features',
-]
+const proFeatures = computed(() => [
+  { text: t('pricing.proFeat1'), included: true },
+  { text: t('pricing.proFeat2'), included: true },
+  { text: t('pricing.proFeat3'), included: true },
+  { text: t('pricing.proFeat4'), included: true },
+  { text: t('pricing.proFeat5'), included: true },
+  { text: t('pricing.proFeat6'), included: true },
+  { text: t('pricing.proFeat7'), included: true },
+  { text: t('pricing.proFeat8'), included: false },
+  { text: t('pricing.proFeat9'), included: false },
+  { text: t('pricing.proFeat10'), included: false },
+])
+
+const plusFeatures = computed(() => [
+  t('pricing.plusFeat1'),
+  t('pricing.plusFeat2'),
+  t('pricing.plusFeat3'),
+  t('pricing.plusFeat4'),
+  t('pricing.plusFeat5'),
+  t('pricing.plusFeat6'),
+  t('pricing.plusFeat7'),
+  t('pricing.plusFeat8'),
+  t('pricing.plusFeat9'),
+  t('pricing.plusFeat10'),
+])
 </script>
