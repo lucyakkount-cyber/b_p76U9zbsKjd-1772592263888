@@ -77,23 +77,23 @@
                 <div class="text-muted-foreground/60">Initializing Neural Persona Engine...</div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-400">&#x2713;</span>
-                  <span class="text-foreground">3D Avatar loaded</span>
+                  <span class="text-foreground">{{ $t('demo.boot1') }}</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-400">&#x2713;</span>
-                  <span class="text-foreground">AI engine connected</span>
+                  <span class="text-foreground">{{ $t('demo.boot2') }}</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-400">&#x2713;</span>
-                  <span class="text-foreground">Expressions engine ready</span>
+                  <span class="text-foreground">{{ $t('demo.boot3') }}</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-green-400">&#x2713;</span>
-                  <span class="text-foreground">Voice pipeline active</span>
+                  <span class="text-foreground">{{ $t('demo.boot4') }}</span>
                 </div>
                 <div class="mt-3 pt-3 border-t border-border">
                   <div class="flex items-center gap-2">
-                    <span class="text-primary font-semibold">AVATAR</span>
+                    <span class="text-primary font-semibold">{{ $t('demo.bootLabel') }}</span>
                     <span class="text-foreground/50">&gt;</span>
                     <span class="text-foreground">Hey! Ready to see something new?</span>
                     <span class="inline-block w-1.5 h-4 bg-primary animate-pulse ml-1"></span>

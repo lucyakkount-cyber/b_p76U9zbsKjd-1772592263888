@@ -83,7 +83,12 @@
     "loggedIn": "You are signed in. Launch the demo below!",
     "btnSign": "Sign In to Launch Demo",
     "btnLaunch": "Launch Free Demo",
-    "btnLive": "Visit Live App"
+    "btnLive": "Visit Live App",
+    "boot1": "3D Avatar loaded",
+    "boot2": "AI engine connected",
+    "boot3": "Expressions engine ready",
+    "boot4": "Voice pipeline active",
+    "bootLabel": "AVATAR"
   },
   "pricing": {
     "badge": "Pricing Plans",
@@ -136,6 +141,65 @@
     "plusFeat10": "Early access to new features",
     "note1": "All plans include access to the base VRoid 3D AI avatar.",
     "note2_1": " unlocks screen analysis and extended voice chat.",
-    "note2_2": " unlocks custom personas, memory, own model uploads, and removes all limits."
+    "note2_2": " unlocks custom personas, memory, own model uploads, and removes all limits.",
+    "stdName": "Standard",
+    "proName": "Pro",
+    "plusName": "Plus"
+  },
+  "whyMock": {
+    "botType": "Generic ChatBot",
+    "botInterface": "Text-only interface",
+    "botMsg1": "Hello! I am an AI assistant. How can I help you today?",
+    "userMsg": "Can you explain this code?",
+    "botMsg2": "Sure! Here is a wall of text with no expression, no feeling, just... words on a screen.",
+    "vrmLive": "Live 3D Avatar",
+    "vrmPreview": "Avatar preview",
+    "vrmActive": "3D VRoid Model Active",
+    "vrmVoice": "Voice Active",
+    "vrmMood": "Happy"
+  },
+  "whyOldWay": {
+    "item1": "Staring at a white screen with walls of text",
+    "item2": "No face, no body language, no emotion &mdash; just words",
+    "item3": "Copy-paste responses that feel robotic and lifeless",
+    "item4": "Zero personality &mdash; every AI feels exactly the same",
+    "item5": "Type and wait... type and wait... type and wait",
+    "item6": "No voice, no real-time interaction, no presence",
+    "item7": "Feels like talking to a search engine, not a being"
+  },
+  "whyNewWay": {
+    "item1": "A real 3D VRoid avatar that looks at you and reacts",
+    "item2": "Dynamic facial expressions &mdash; smiles, surprise, anger, thinking",
+    "item3": "Real-time voice conversation &mdash; just talk naturally",
+    "item4": "Unique personality engine with emotional intelligence",
+    "item5": "Instant responses with facial reactions and body language",
+    "item6": "Screen sharing &mdash; your AI can SEE what you are working on",
+    "item7": "Feels like talking to a real companion, not a tool"
+  },
+  "auth": {
+    "welcome": "Welcome Back",
+    "createTitle": "Create Account",
+    "descLogin": "Sign in to access the demo",
+    "descReg": "Register to try the free demo",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "passLabel": "Password",
+    "passPlaceholder": "Min. 6 characters",
+    "processing": "Processing...",
+    "btnSign": "Sign In",
+    "btnCreate": "Create Account",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "btnReg": "Register",
+    "errNoAccount": "No account found with this email. Please register first.",
+    "errPass": "Incorrect password. Please try again.",
+    "succLogin": "Signed in successfully! You can now access the demo.",
+    "errExists": "An account with this email already exists. Try signing in.",
+    "succReg": "Account created! You can now access the demo."
+  },
+  "redirect": {
+    "status": "REDIRECTING",
+    "heading": "Taking you to Quantum VRM",
+    "desc": "You will be redirected shortly..."
   }
 }

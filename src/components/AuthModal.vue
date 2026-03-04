@@ -30,10 +30,10 @@
             </svg>
           </div>
           <h2 class="text-2xl font-bold text-foreground">
-            {{ isLogin ? 'Welcome Back' : 'Create Account' }}
+            {{ isLogin ? $t('auth.welcome') : $t('auth.createTitle') }}
           </h2>
           <p class="text-muted-foreground text-sm mt-2">
-            {{ isLogin ? 'Sign in to access the demo' : 'Register to try the free demo' }}
+            {{ isLogin ? $t('auth.descLogin') : $t('auth.descReg') }}
           </p>
         </div>
 
@@ -57,7 +57,7 @@
         <form @submit.prevent="handleSubmit" class="space-y-5">
           <!-- Email -->
           <div>
-            <label for="email" class="block text-sm font-medium text-foreground mb-2">Email</label>
+            <label for="email" class="block text-sm font-medium text-foreground mb-2">{{ $t('auth.emailLabel') }}</label>
             <div class="relative">
               <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -68,7 +68,7 @@
                 v-model="email"
                 type="email"
                 required
-                placeholder="you@example.com"
+                :placeholder="$t('auth.emailPlaceholder')"
                 class="w-full pl-11 pr-4 py-3 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all"
               />
             </div>
@@ -76,7 +76,7 @@
 
           <!-- Password -->
           <div>
-            <label for="password" class="block text-sm font-medium text-foreground mb-2">Password</label>
+            <label for="password" class="block text-sm font-medium text-foreground mb-2">{{ $t('auth.passLabel') }}</label>
             <div class="relative">
               <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
@@ -88,7 +88,7 @@
                 :type="showPassword ? 'text' : 'password'"
                 required
                 minlength="6"
-                placeholder="Min. 6 characters"
+                :placeholder="$t('auth.passPlaceholder')"
                 class="w-full pl-11 pr-12 py-3 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all"
               />
               <button
@@ -118,19 +118,19 @@
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
               <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
             </svg>
-            {{ loading ? 'Processing...' : (isLogin ? 'Sign In' : 'Create Account') }}
+            {{ loading ? $t('auth.processing') : (isLogin ? $t('auth.btnSign') : $t('auth.btnCreate')) }}
           </button>
         </form>
 
         <!-- Toggle mode -->
         <div class="text-center mt-6 pt-6 border-t border-border">
           <p class="text-muted-foreground text-sm">
-            {{ isLogin ? "Don't have an account?" : 'Already have an account?' }}
+            {{ isLogin ? $t('auth.noAccount') : $t('auth.hasAccount') }}
             <button
               @click="toggleMode"
               class="text-primary font-medium hover:underline ml-1"
             >
-              {{ isLogin ? 'Register' : 'Sign In' }}
+              {{ isLogin ? $t('auth.btnReg') : $t('auth.btnSign') }}
             </button>
           </p>
         </div>
@@ -141,12 +141,15 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   show: Boolean,
 })
 
 const emit = defineEmits(['close', 'authenticated'])
+
+const { t } = useI18n()
 
 const isLogin = ref(true)
 const email = ref('')
@@ -192,17 +195,17 @@ async function handleSubmit() {
   if (isLogin.value) {
     // Login
     if (!existingUser) {
-      errorMsg.value = 'No account found with this email. Please register first.'
+      errorMsg.value = t('auth.errNoAccount')
       loading.value = false
       return
     }
     if (existingUser.password !== password.value) {
-      errorMsg.value = 'Incorrect password. Please try again.'
+      errorMsg.value = t('auth.errPass')
       loading.value = false
       return
     }
     setCurrentUser({ email: existingUser.email, registered: true })
-    successMsg.value = 'Signed in successfully! You can now access the demo.'
+    successMsg.value = t('auth.succLogin')
     setTimeout(() => {
       email.value = ''
       password.value = ''
@@ -211,14 +214,14 @@ async function handleSubmit() {
   } else {
     // Register
     if (existingUser) {
-      errorMsg.value = 'An account with this email already exists. Try signing in.'
+      errorMsg.value = t('auth.errExists')
       loading.value = false
       return
     }
     users.push({ email: email.value, password: password.value, registered: true, createdAt: new Date().toISOString() })
     saveUsers(users)
     setCurrentUser({ email: email.value, registered: true })
-    successMsg.value = 'Account created! You can now access the demo.'
+    successMsg.value = t('auth.succReg')
     setTimeout(() => {
       email.value = ''
       password.value = ''

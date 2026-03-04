@@ -83,7 +83,12 @@
     "loggedIn": "Siz tizimga kirdingiz. Quyida demoni ishga tushiring!",
     "btnSign": "Demoni ishga tushirish uchun kiring",
     "btnLaunch": "Bepul demoni ishga tushiring",
-    "btnLive": "Jonli ilovaga tashrif buyuring"
+    "btnLive": "Jonli ilovaga tashrif buyuring",
+    "boot1": "3D Avatar yuklandi",
+    "boot2": "AI dvigateli ulandi",
+    "boot3": "Yuz ifodalari dvigateli tayyor",
+    "boot4": "Ovozli aloqa faol",
+    "bootLabel": "AVATAR"
   },
   "pricing": {
     "badge": "Narxlar rejalari",
@@ -136,6 +141,65 @@
     "plusFeat10": "Yangi imkoniyatlarga barvaqt kirish",
     "note1": "Barcha tariflarga tayanch VRoid 3D AI avatar mavjud.",
     "note2_1": " ekran tahlili va kengaytirilgan ovozli suhbatni ochadi.",
-    "note2_2": " ga alohida shaxslar, xotira, shaxsiy model yuklash imkonini kiritadi va barcha limitlarni olib tashlaydi."
+    "note2_2": " ga alohida shaxslar, xotira, shaxsiy model yuklash imkonini kiritadi va barcha limitlarni olib tashlaydi.",
+    "stdName": "Standart",
+    "proName": "Pro",
+    "plusName": "Plus"
+  },
+  "whyMock": {
+    "botType": "Odatiy Chat-bot",
+    "botInterface": "Faqat matnli interfeys",
+    "botMsg1": "Salom! Men AI yordamchisiman. Bugun sizga qanday yordam bera olaman?",
+    "userMsg": "Ushbu kodni tushuntirib bera olasizmi?",
+    "botMsg2": "Albatta! Mana his-tuyg'usiz, faqat ekran dagi ... so'zlardan iborat matn devori.",
+    "vrmLive": "Jonli 3D Avatar",
+    "vrmPreview": "Avatar ko'rinishi",
+    "vrmActive": "3D VRoid Modeli Faol",
+    "vrmVoice": "Ovoz Faol",
+    "vrmMood": "Xursand"
+  },
+  "whyOldWay": {
+    "item1": "Matn devorlari bo'lgan oq ekranga tikilib turish",
+    "item2": "Yuz yo'q, tana tili yo'q, his-tuyg'u yo'q — faqat so'zlar",
+    "item3": "Robotik va jonsiz his qilinadigan nusxalangan javoblar",
+    "item4": "Nol shaxsiyat — har bir AI bir xil his qiladi",
+    "item5": "Yozing va kuting... yozing va kuting... yozing va kuting",
+    "item6": "Ovoz yo'q, real vaqtda o'zaro aloqa yo'q, mavjudot bo'lmasligi",
+    "item7": "Tirik mavjudot bilan emas, qidiruv tizimi bilan gaplashayotgandek tuyuladi"
+  },
+  "whyNewWay": {
+    "item1": "Sizga qaraydigan va reaksiyaga kirishadigan haqiqiy 3D VRoid avatari",
+    "item2": "Dinamik yuz ifodalari — tabassum, hayrat, g'azab, o'ylash",
+    "item3": "Real vaqtda ovozli suhbat — shunchaki tabiiy gapiring",
+    "item4": "Hissiy intellektga ega noyob shaxsiyat dvigateli",
+    "item5": "Yuz reaktsiyalari va tana tili bilan lahzali javoblar",
+    "item6": "Ekranni ulashing — AIningiz nima ustida ishlayotganingizni KO'RA oladi",
+    "item7": "Asbob bilan emas, haqiqiy hamroh bilan gaplashayotgandek tuyuladi"
+  },
+  "auth": {
+    "welcome": "Xush kelibsiz",
+    "createTitle": "Hisob yaratish",
+    "descLogin": "Demoga kirish uchun kiring",
+    "descReg": "Bepul demoni sinab ko'rish uchun ro'yxatdan o'ting",
+    "emailLabel": "Email",
+    "emailPlaceholder": "siz@example.com",
+    "passLabel": "Parol",
+    "passPlaceholder": "Kaminida 6 ta belgi",
+    "processing": "Jarayonda...",
+    "btnSign": "Kirish",
+    "btnCreate": "Hisob yaratish",
+    "noAccount": "Hisobingiz yo'qmi?",
+    "hasAccount": "Allaqachon hisobingiz bormi?",
+    "btnReg": "Ro'yxatdan o'tish",
+    "errNoAccount": "Bu elektron pochta bilan hisob topilmadi. Avval ro'yxatdan o'ting.",
+    "errPass": "Noto'g'ri parol. Qaytadan urinib ko'ring.",
+    "succLogin": "Muvaffaqiyatli kirdingiz! Endi demoga kirishingiz mumkin.",
+    "errExists": "Bu elektron pochta manzili bilan hisob allaqachon mavjud. Kirishga harakat qiling.",
+    "succReg": "Hisob yaratildi! Endi demoga kirishingiz mumkin."
+  },
+  "redirect": {
+    "status": "QAYTA YO'NALTIRILMOQDA",
+    "heading": "Quantum VRM ga yo'naltirilmoqdasiz",
+    "desc": "Siz birozdan so'ng qayta yo'naltirilasiz..."
   }
 }

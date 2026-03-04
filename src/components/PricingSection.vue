@@ -30,7 +30,7 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-card border border-border text-xs font-mono text-muted-foreground mb-4">
               {{ $t('pricing.stdTier') }}
             </div>
-            <h3 class="text-2xl font-bold text-foreground mb-2">Standard</h3>
+            <h3 class="text-2xl font-bold text-foreground mb-2">{{ $t('pricing.stdName') }}</h3>
             <div class="flex items-baseline gap-1">
               <span class="text-5xl font-extrabold text-foreground">$0</span>
               <span class="text-muted-foreground">{{ $t('pricing.forever') }}</span>
@@ -70,7 +70,7 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-mono text-primary mb-4">
               {{ $t('pricing.proTier') }}
             </div>
-            <h3 class="text-2xl font-bold text-foreground mb-2">Pro</h3>
+            <h3 class="text-2xl font-bold text-foreground mb-2">{{ $t('pricing.proName') }}</h3>
             <div class="flex items-baseline gap-1">
               <span class="text-5xl font-extrabold neon-text">$4.99</span>
               <span class="text-muted-foreground">{{ $t('pricing.month') }}</span>
@@ -110,7 +110,7 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-xs font-mono text-yellow-400 mb-4">
               {{ $t('pricing.plusTier') }}
             </div>
-            <h3 class="text-2xl font-bold text-foreground mb-2">Plus</h3>
+            <h3 class="text-2xl font-bold text-foreground mb-2">{{ $t('pricing.plusName') }}</h3>
             <div class="flex items-baseline gap-1">
               <span class="text-5xl font-extrabold text-yellow-400" style="text-shadow: 0 0 10px rgba(250, 204, 21, 0.5), 0 0 20px rgba(250, 204, 21, 0.2);">$9.99</span>
               <span class="text-muted-foreground">{{ $t('pricing.month') }}</span>
@@ -139,8 +139,8 @@
           {{ $t('pricing.note1') }}
         </p>
         <p class="text-muted-foreground text-xs">
-          <span class="text-primary">Pro</span>{{ $t('pricing.note2_1') }}
-          <span class="text-yellow-400">Plus</span>{{ $t('pricing.note2_2') }}
+          <span class="text-primary">{{ $t('pricing.proName') }}</span>{{ $t('pricing.note2_1') }}
+          <span class="text-yellow-400">{{ $t('pricing.plusName') }}</span>{{ $t('pricing.note2_2') }}
         </p>
       </div>
     </div>
